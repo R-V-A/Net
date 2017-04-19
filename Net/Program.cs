@@ -10,7 +10,20 @@ namespace Net
     {
         static void Main(string[] args)
         {
-            
+            Console.WriteLine("Hello");
+            int f = 0;
+            try
+            {
+                var s = Int32.Parse(Console.ReadLine());
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Fik");
+                throw;
+            }
+
+
+            Console.ReadKey();
         }
     }
 }
